@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious Bites Restaurant - A place to enjoy mouthwatering meals, from appetizers to desserts.">
+    <meta name="keywords" content="restaurant, food, delicious bites, dining, menu, best food">
+    <meta name="author" content="Delicious Bites Team">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="icon" href="assests/relimage.jpg" type="image/jpg"> <!-- Favicon -->
+</head>
+<body>
+
+    <!-- Main Header Section -->
+    <header>
+        <h1>Welcome to Delicious Bites Restaurant!</h1>
+        <p>Your favorite place for mouthwatering meals. We serve delicious food with a touch of love!</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p>We serve a variety of dishes to satisfy every taste. Check out our options:</p>
+
+            <article>
+                <h3>Appetizers</h3>
+                <ul>
+                    <li>Spring Rolls - <span class="price">Rs.130</span></li>
+                    <li>Garlic Bread - <span class="price">Rs.130</span></li>
+                    <li>Caesar Salad - <span class="price">Rs.490</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Main Courses</h3>
+                <ul>
+                    <li>Grilled Chicken - <span class="price">Rs.300</span></li>
+                    <li>Pasta Carbonara - <span class="price">Rs.190</span></li>
+                    <li>Vegetable Stir Fry - <span class="price">Rs.150</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Desserts</h3>
+                <ul>
+                    <li>Chocolate Cake - <span class="price">Rs.99</span></li>
+                    <li>Ice Cream Sundae - <span class="price">Rs.299</span></li>
+                    <li>Apple Pie - <span class="price">Rs.549</span></li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservation">
+            <h2>Make a Reservation</h2>
+            <p>Book a table online. Fill out the form below and we'll confirm your reservation.</p>
+
+            <form action="submit_reservation.html" method="POST">
+                <fieldset>
+                    <legend>Reservation Details</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name"><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email address"><br><br>
+
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="time">Reservation Time:</label>
+                    <input type="time" id="time" name="time" required><br><br>
+
+                    <label for="people">Number of People:</label>
+                    <input type="number" id="people" name="people" min="1" max="10" required><br><br>
+
+                    <input type="submit" value="Reserve Now">
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Special Offers Section -->
+        <aside id="offers">
+            <h2>Special Offers</h2>
+            <ul>
+                <li>Buy one get one free on appetizers every Friday!</li>
+                <li>Family dinner deal: 2 main courses, 2 appetizers, and 2 desserts for Rs.39.99</li>
+                <li>Join our loyalty program and get 10% off your next meal!</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us at:</p>
+        <address>
+            123 Flavor Street, Foodtown, Tasty City
+        </address>
+
+        <p>For reservations or inquiries, call us at: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p>Or email us at: <a href="mailto:info@deliciousbites.com">info@deliciousbites.com</a></p>
+
+        <h3>Follow Us:</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/DeliciousBites" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/DeliciousBites" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/DeliciousBites" target="_blank">Twitter</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Delicious Bites Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
